@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  my_script:
+    environment:
+      - TOKEN=7640747419:AAGt7W_IQeKx9xXjAPnPJ_DElc5vHjU-N2o
+      - CHAT_ID=633422208
+    build: .
+    # Контейнер будет перезапускаться, если завершится с ошибкой
+    restart: on-failure
