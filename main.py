@@ -23,7 +23,7 @@ def run() -> None:
         "Велострана": VelostranaChecker(),
         "Велосклад": VeloskladChecker()
     }
-
+    notifier.send_message("Start working parser")
     try:
         while True:
             time.sleep(random.randrange(start=5, stop=20))
